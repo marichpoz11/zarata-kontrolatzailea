@@ -1,9 +1,20 @@
-input.onGesture(Gesture.Shake, function () {
-	
-})
-input.onSound(DetectedSound.Loud, function () {
-	
-})
 basic.forever(function () {
-    input.setSoundThreshold(SoundThreshold.Loud, input.soundLevel())
+    let Soinulimitea = 0
+    if (Soinulimitea < input.soundLevel()) {
+        basic.showLeds(`
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            # # # # #
+            `)
+    } else {
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    }
 })

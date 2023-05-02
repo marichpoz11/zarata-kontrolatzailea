@@ -1,1 +1,13 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="v6CUB73Sqcv;(qh|K0sT">Soinu-limitea</variable></variables><block type="device_forever" id="b^eY[%:c0G;wk/C?E]KC" x="0" y="0"><statement name="HANDLER"><block type="input_set_sound_threshold" id="NGOi56VGlc7WnM,j,,c;"><field name="sound">SoundThreshold.Loud</field><value name="value"><shadow type="math_number_minmax" disabled="true"><mutation min="0" max="255" label="Threshold" precision="0"></mutation><field name="SLIDER">125</field></shadow><block type="device_get_sound_level" id="CmZkeEO@N_+NdfiNTV3c"></block></value></block></statement></block><block type="device_gesture_event" id="(h$9P$d`(%pb!GR5.^Wo" x="304" y="176"><field name="NAME">Gesture.Shake</field></block><block type="variables_get" id="NKREovz.2aJ8y=i5~MW0" disabled="true" x="-10" y="212"><field name="VAR" id="v6CUB73Sqcv;(qh|K0sT">Soinu-limitea</field></block><block type="input_on_sound" id="lZ1`6|KJD%MVk=f:S{_h" x="-125" y="314"><field name="sound">DetectedSound.Loud</field></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="v6CUB73Sqcv;(qh|K0sT">Soinu-limitea</variable></variables><block type="device_forever" id="b^eY[%:c0G;wk/C?E]KC" x="-49" y="-312"><statement name="HANDLER"><block type="controls_if" id="qcVWmao+3el9I1oEE?PW"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean" id="OlZ8d`c$2-[/(q^Q(rSg"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="7aoLl-^y4GqtzjneOW|q"><field name="OP">LT</field><value name="A"><shadow type="math_number" id=",RV#_.xvW.5$Km:{],vL"><field name="NUM">0</field></shadow><block type="variables_get" id="cI;xRjK~uEJ1+Dc%0-`}"><field name="VAR" id="v6CUB73Sqcv;(qh|K0sT">Soinu-limitea</field></block></value><value name="B"><shadow type="math_number" id="2fqx+K@i4Mx~YoM{rU`="><field name="NUM">125</field></shadow><block type="device_get_sound_level" id=".dPJm3,c`#orjPE=x.$5"></block></value></block></value><statement name="DO0"><block type="device_show_leds" id="-~7J%l2cFN,N)lArK]*I"><field name="LEDS">`
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # # 
+        # # # # #
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="|0_uWL!7p7*rf[V)bV7k"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></statement></block></statement></block></xml>
